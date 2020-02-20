@@ -1,0 +1,27 @@
+image: docker:stable
+
+services:
+  - docker:stable-dind
+
+variables:
+  DOCKER_DRIVER: overlay2
+  NC_IMAGE: $CI_REGISTRY_IMAGE/base
+
+before_script:
+  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+
+stages:
+  - Build
+
+Build Base:
+  stage: Build
+  script:
+    - docker pull $NC_IMAGE:latest || true
+    - docker build --tag $NC_IMAGE:latest -f ./Dockerfile . --cache-from $NC_IMAGE:latest
+    - docker push $NC_IMAGE:latest
+  only:
+    refs:
+      - merge_requests
+      - master
+    changes:
+      - Dockerfile
