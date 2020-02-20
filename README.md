@@ -32,6 +32,10 @@ services:
         ...
 ```
 
+*__Be careful__*, to use this image you will need to configure your project to use chrome headless.
+
+For example, if you are dealing with a stencil application you will need to follow this guide: https://stenciljs.com/docs/end-to-end-testing#caveat-about-e2e-tests-automation-on-cd-ci
+
 ## Contributors
 
 - Lorenzo Calamandrei <nexcal.dev@gmail.com>

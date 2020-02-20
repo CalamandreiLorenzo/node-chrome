@@ -23,5 +23,3 @@ Build Base:
     refs:
       - merge_requests
       - master
-    changes:
-      - Dockerfile
