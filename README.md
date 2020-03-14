@@ -5,9 +5,9 @@
 This repo is also mirrored on GitHub.
 But GitHub is used only to deploy on DockerHub, using automated build.
 
-- [GitHub Repo - Laravel Container](https://github.com/CalamandreiLorenzo/node-chrome)
-- [GitLab Repo - Laravel Container](https://gitlab.com/lorenzocalamandrei/node-chrome)
-- [Docker Hub - Laravel Container](https://hub.docker.com/r/lorenzocalamandrei/node-chrome)
+- [GitHub Repo - Node Chrome Container](https://github.com/CalamandreiLorenzo/node-chrome)
+- [GitLab Repo - Node Chrome Container](https://gitlab.com/lorenzocalamandrei/node-chrome)
+- [Docker Hub - Node Chrome Container](https://hub.docker.com/r/lorenzocalamandrei/node-chrome)
 
 ## Requirements
 
